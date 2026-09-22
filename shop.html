@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Collection | Nure Asmir</title>
+  <meta name="description" content="Shop Nure Asmir: shirts, pants, shalwar kameez and accessories.">
+  <meta name="theme-color" content="#f0e6dc">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0a07'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f0e6dc'%3ENA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="shop">
+<main id="main">
+  <section class="container page-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Shop</span></nav>
+    <h1 class="h1" id="title">The Collection</h1>
+    <p class="lead" id="lead"></p>
+  </section>
+
+  <div class="toolbar">
+    <div class="container toolbar__in">
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <label class="sort"><span>Sort</span>
+        <select id="sort" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="az">Name A to Z</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <section class="container" style="padding-bottom:clamp(64px,10vw,140px)">
+    <p class="results-note" id="note" aria-live="polite"></p>
+    <div class="pgrid" id="grid"></div>
+  </section>
+
+  <section class="section surface-raised">
+    <div class="container" style="display:grid;gap:22px;justify-items:center;text-align:center">
+      <span class="eyebrow eyebrow--accent">Made to measure</span>
+      <h2 class="h1" style="max-width:14em">Something <em>just for you</em>?</h2>
+      <p class="lead">Our shalwar kameez and waistcoats can be tailored to your measurements in the atelier.</p>
+      <a class="btn btn--primary" href="contact.html">Book a fitting</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

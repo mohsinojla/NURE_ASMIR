@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lookbook | Nure Asmir</title>
+  <meta name="description" content="The Nure Asmir lookbook: the new season in sun, stone and olive light.">
+  <meta name="theme-color" content="#f0e6dc">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0a07'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f0e6dc'%3ENA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="lookbook">
+<main id="main">
+  <section class="container page-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Lookbook</span></nav>
+    <h1 class="h1">Good clothes, <em>better days</em></h1>
+    <p class="lead">The new season, photographed in sun, stone and olive light. Tap any frame to see it full size.</p>
+  </section>
+
+  <section class="container" style="padding-bottom:clamp(64px,10vw,140px)">
+    <div class="lb-filters" id="lbChips" role="group" aria-label="Filter lookbook">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="shirts" aria-pressed="false">Shirts</button>
+      <button class="chip" data-f="objects" aria-pressed="false">Pants &amp; Accessories</button>
+      <button class="chip" data-f="atelier" aria-pressed="false">The Atelier</button>
+    </div>
+    <div class="mosaic" id="mosaic"></div>
+  </section>
+
+  <section class="section on-dark" data-theme="espresso">
+    <div class="container" style="display:grid;gap:22px;justify-items:center;text-align:center">
+      <span class="eyebrow eyebrow--accent">Shop the looks</span>
+      <h2 class="h1" style="max-width:12em">Wear what you <em>see</em></h2>
+      <a class="btn btn--brass" href="shop.html">Shop the collection</a>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer" aria-modal="true">
+  <button class="lb-x" aria-label="Close"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  <button class="lb-p" aria-label="Previous"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-n" aria-label="Next"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+  <p class="lightbox__cap" id="lbCap"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nure Asmir | Men's Wear. Tradition in a modern form.</title>
+  <meta name="description" content="Nure Asmir is a men's wear label: shirts, pants, shalwar kameez and accessories rooted in South Asian craft and cut for today.">
+  <meta name="theme-color" content="#f0e6dc">
+  <meta property="og:title" content="Nure Asmir | Men's Wear">
+  <meta property="og:description" content="Tradition in a modern form.">
+  <meta property="og:image" content="public/assets/web/banner-coming-soon.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0a07'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f0e6dc'%3ENA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="public/assets/web/oxblood-paisley-tee.jpg" fetchpriority="high">
+  <script>
+    document.documentElement.classList.add("js");
+    try { if (!sessionStorage.getItem("na-splash")) { sessionStorage.setItem("na-splash", "1"); document.documentElement.classList.add("splash-on"); } } catch (e) {}
+  </script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="home">
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <span class="eyebrow eyebrow--accent" data-reveal>The new season</span>
+        <h1 class="display" data-reveal style="--d:.1s">Tradition in a <em>modern</em> form.</h1>
+        <p class="lead" data-reveal style="--d:.2s">Men's wear rooted in South Asian craft, with paisley, sashiko and hand embroidery, cut for the way you live now.</p>
+        <div class="hero__cta" data-reveal style="--d:.3s">
+          <a class="btn btn--primary" href="shop.html">Shop the collection</a>
+          <a class="link" href="lookbook.html">View lookbook <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="hero__meta" data-reveal style="--d:.4s">
+          <div><b>Hand-finished</b><span class="eyebrow">Embroidery &amp; print</span></div>
+          <div><b>Made to measure</b><span class="eyebrow">Shalwar kameez</span></div>
+          <div><b>14-day returns</b><span class="eyebrow">Unworn pieces</span></div>
+        </div>
+      </div>
+      <div class="hero__media" data-reveal="fade" style="--d:.15s">
+        <div class="hero__ring" aria-hidden="true"></div>
+        <div class="hero__arch arch">
+          <img data-parallax=".07" src="public/assets/web/oxblood-paisley-tee.jpg" width="1086" height="1448" alt="Model in an oxblood tee with a printed paisley border, seated on a stone bench beside an olive tree" fetchpriority="high">
+        </div>
+        <a class="hero__cap" href="product.html?id=paisley-border-tee"><span class="eyebrow">Paisley Border Tee</span><br><span style="font-size:20px">Oxblood &middot; Rs. 4,900</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><span class="eyebrow eyebrow--accent" data-reveal>Shop by category</span><h2 class="h2" data-reveal style="--d:.08s">Four ways into <em>the house</em></h2></div>
+      </div>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section surface-raised">
+    <div class="container">
+      <div class="sec-head">
+        <div><span class="eyebrow eyebrow--accent" data-reveal>New arrivals</span><h2 class="h2" data-reveal style="--d:.08s">Made to be <em>worn in</em></h2></div>
+        <div class="rail-ctl"><button class="round" id="railPrev" aria-label="Previous"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button><button class="round" id="railNext" aria-label="Next"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button></div>
+      </div>
+      <div class="rail" id="newRail"></div>
+      <div style="margin-top:44px;text-align:center"><a class="btn btn--secondary" href="shop.html">View all pieces</a></div>
+    </div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="section on-dark" data-theme="espresso">
+    <div class="container craft__grid">
+      <div class="craft__imgs">
+        <figure data-reveal="rise-img"><div class="arch"><img src="public/assets/web/detail-tree.jpg" alt="Tonal embroidery of a tall tree and a deer on a sage tee" loading="lazy"></div><figcaption>Hand embroidery</figcaption></figure>
+        <figure data-reveal="rise-img" style="--d:.15s"><div class="arch"><img src="public/assets/web/detail-paisley.jpg" alt="Printed paisley border in rust, sage and cream on an oxblood tee" loading="lazy"></div><figcaption>Paisley print</figcaption></figure>
+      </div>
+      <div>
+        <span class="eyebrow eyebrow--accent" data-reveal>The craft</span>
+        <h2 class="h1" data-reveal style="--d:.08s;margin-top:14px">Heritage you can <em>feel</em> in the stitch</h2>
+        <p class="lead" data-reveal style="--d:.16s;margin-top:20px">Every piece carries a technique with a history. We keep the hand, and change the cut.</p>
+        <div class="craft__list">
+          <div class="craft__item" data-reveal><span>01</span><div><h3 class="h3">Embroidery</h3><p>Cranes, trees and deer, stitched in tonal thread across the back of the garment.</p></div></div>
+          <div class="craft__item" data-reveal><span>02</span><div><h3 class="h3">Sashiko-style patchwork</h3><p>Running stitches and geometric indigo panels, worked into relaxed ivory cotton.</p></div></div>
+          <div class="craft__item" data-reveal><span>03</span><div><h3 class="h3">Paisley &amp; block print</h3><p>Heirloom shawl motifs and scalloped black patches, printed on modern silhouettes.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK MOSAIC -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <div><span class="eyebrow eyebrow--accent" data-reveal>Lookbook</span><h2 class="h2" data-reveal style="--d:.08s">Good clothes, <em>better days</em></h2></div>
+        <a class="link" href="lookbook.html" data-reveal>Open lookbook <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="mosaic mosaic--home">
+        <a class="tile tile--tall" href="lookbook.html" data-reveal><img src="public/assets/web/ivory-crane-tee-back.jpg" alt="Back of an ivory tee with an embroidered crane in flight" loading="lazy"><span class="tile__cap">Same sky, different perspective</span></a>
+        <a class="tile" href="lookbook.html" data-reveal style="--d:.08s"><img src="public/assets/web/ivory-sashiko-tee.jpg" alt="Model leaning on a stone wall in an ivory sashiko tee and khaki cargos" loading="lazy" style="object-position:50% 25%"><span class="tile__cap">Good clothes, better days</span></a>
+        <a class="tile tile--quote" href="lookbook.html" data-reveal style="--d:.16s"><div><p>Rooted in culture, worn for today.</p><span class="dash"></span></div></a>
+        <a class="tile tile--tall" href="lookbook.html" data-reveal style="--d:.24s"><img src="public/assets/web/sage-wave-tee.jpg" alt="Model lying on a woven rug in a three-tone sage tee" loading="lazy"><span class="tile__cap">A calmer you</span></a>
+        <a class="tile" href="lookbook.html" data-reveal><img src="public/assets/web/camp-collar-shirt.jpg" alt="Model in a linen camp collar shirt with black block-print patches" loading="lazy" style="object-position:50% 20%"><span class="tile__cap">Timeless style for modern men</span></a>
+        <a class="tile" href="lookbook.html" data-reveal style="--d:.08s"><img src="public/assets/web/sage-tree-tee.jpg" alt="Model seen from behind in a sage tee with a tree and deer embroidered on the back" loading="lazy"><span class="tile__cap">Discipline creates freedom</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATELIER -->
+  <section class="atelier on-dark" data-theme="espresso">
+    <div class="atelier__img"><img data-parallax=".05" src="public/assets/web/banner-storefront.jpg" alt="The Nure Asmir storefront: the wordmark on a limestone wall beside a window of tailored jackets, and two portraits in the display" width="2048" height="768" loading="lazy"></div>
+    <div class="container atelier__panel">
+      <div data-reveal>
+        <span class="eyebrow eyebrow--accent">The atelier</span>
+        <h2 class="h1" style="margin-top:14px">Come and <em>try it on</em></h2>
+      </div>
+      <div style="display:grid;gap:26px;--d:.1s" data-reveal>
+        <div class="atelier__cols">
+          <div><h4>Visit</h4><p>Store address<br>to be announced</p></div>
+          <div><h4>Hours</h4><p>Mon to Sat<br>11:00 to 21:00</p></div>
+          <div><h4>Tailoring</h4><p>Made to measure<br>by appointment</p></div>
+        </div>
+        <div><a class="btn btn--brass" href="contact.html">Book a visit</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section">
+    <div class="container">
+      <div class="values">
+        <div class="values__row" data-reveal><b>Style</b><span>Cut clean, worn easy</span></div>
+        <div class="values__row" data-reveal style="--d:.08s"><b>Heritage</b><span>Craft that keeps its hand</span></div>
+        <div class="values__row" data-reveal style="--d:.16s"><b>Confidence</b><span>Quiet, never loud</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEASER + NEWSLETTER -->
+  <section class="teaser surface-raised">
+    <div class="teaser__img" data-reveal="fade"><img src="public/assets/web/banner-coming-soon.jpg" alt="Folded shirts, a forest-green gift bag, leather wallets, a belt and a silk tie arranged on a marble plinth" width="2048" height="768" loading="lazy"></div>
+    <div class="container teaser__body">
+      <div data-reveal>
+        <span class="eyebrow eyebrow--accent">Shirts &middot; Pants &middot; Shalwar Kameez &middot; Accessories</span>
+        <h2 class="h1" style="margin-top:14px">The full house <em>opens soon</em></h2>
+      </div>
+      <div data-reveal style="--d:.12s;display:grid;gap:14px">
+        <p class="lead">Be first to see new pieces and private appointments. One note a month, never more.</p>
+        <form class="form-inline js-news" novalidate><label class="sr-only" for="nl">Email address</label><input id="nl" type="email" placeholder="Your email address" autocomplete="email"><button class="btn btn--primary" type="submit">Notify me</button></form>
+        <p class="form-note" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

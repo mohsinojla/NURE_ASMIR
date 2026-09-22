@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Visit Us | Nure Asmir</title>
+  <meta name="description" content="Visit the Nure Asmir atelier, book a fitting, or get in touch.">
+  <meta name="theme-color" content="#f0e6dc">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0a07'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23f0e6dc'%3ENA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="contact">
+<main id="main">
+  <section class="container page-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Visit Us</span></nav>
+    <h1 class="h1">Come and <em>try it on</em></h1>
+    <p class="lead">Book a fitting, ask about a piece, or simply say hello. We reply within one working day.</p>
+  </section>
+
+  <section class="container contact">
+    <form class="form" id="contactForm" novalidate data-reveal>
+      <div class="row">
+        <div class="field"><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="p">Phone (optional)</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="t">I would like to</label>
+          <select id="t" name="topic"><option>Book a fitting</option><option>Ask about a piece</option><option>Made-to-measure enquiry</option><option>Something else</option></select>
+        </div>
+      </div>
+      <div class="field"><label for="m">Message</label><textarea id="m" name="message"></textarea></div>
+      <button class="btn btn--primary" type="submit" style="justify-self:start">Send message</button>
+      <p class="form-note" role="status"></p>
+    </form>
+
+    <aside data-reveal style="--d:.1s;display:grid;gap:32px;align-content:start">
+      <div class="map" role="img" aria-label="Map placeholder"><div class="pph tone-bone"><div class="pph__arch"><span class="pph__n">N</span></div><span class="pph__lab">Map to follow</span></div></div>
+      <div class="info-list">
+        <div><h4>Atelier</h4><p>Store address to be announced</p></div>
+        <div><h4>Hours</h4><p>Monday to Saturday<br>11:00 to 21:00</p></div>
+        <div><h4>Contact</h4><p>hello@nureasmir.example<br>+00 000 0000000</p></div>
+        <div><h4>Follow</h4><p><a class="link" href="#">Instagram</a> &nbsp; <a class="link" href="#">Facebook</a></p></div>
+      </div>
+    </aside>
+  </section>
+</main>
+</body>
+</html>

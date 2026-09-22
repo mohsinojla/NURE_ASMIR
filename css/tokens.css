@@ -1,0 +1,68 @@
+:root, [data-theme="ivory"] {
+  --linen: #f0e6dc;
+  --bone: #dbc6b3;
+  --plaster: #ceb399;
+  --stone: #a08d7c;
+  --sage-300: #b3ab8e;
+  --sage-500: #969073;
+  --sage-700: #525241;
+  --forest: #343229;
+  --brass: #bf8e4f;
+  --brass-deep: #7a5426;
+  --oxblood: #4a1e1b;
+  --walnut: #4f3724;
+  --espresso: #3f2314;
+  --charcoal: #1e1a16;
+  --ink: #0c0a07;
+  --surface: var(--linen);
+  --surface-raised: var(--bone);
+  --surface-inverse: var(--ink);
+  --surface-brand: var(--forest);
+  --text: var(--ink);
+  --text-muted: var(--walnut);
+  --text-inverse: var(--linen);
+  --text-accent: var(--brass-deep);
+  --rule: var(--plaster);
+  --border-strong: var(--walnut);
+  --action: var(--ink);
+  --on-action: var(--linen);
+  --action-hover: var(--espresso);
+  --focus: var(--brass-deep);
+}
+[data-theme="espresso"] {
+  --surface: var(--ink);
+  --surface-raised: var(--charcoal);
+  --surface-inverse: var(--linen);
+  --text: var(--linen);
+  --text-muted: var(--plaster);
+  --text-inverse: var(--ink);
+  --text-accent: var(--brass);
+  --rule: var(--walnut);
+  --border-strong: var(--stone);
+  --action: var(--linen);
+  --on-action: var(--ink);
+  --action-hover: var(--bone);
+  --focus: var(--brass);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius-0: 0;
+  --radius-sm: 2px;
+  --radius-arch: 50%;
+  --tracking-wide: 0.12em;
+  --tracking-wider: 0.22em;
+  --tracking-widest: 0.32em;
+  --shadow-plinth: 0 24px 40px -16px rgba(12, 10, 7, 0.45);
+  --glow-strip: 0 8px 24px 0 rgba(255, 224, 170, 0.35);
+  --font-blackletter: "UnifrakturCook", "Old English Text MT", serif;
+  --font-serif: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --font-sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
